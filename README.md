@@ -1,20 +1,18 @@
-# Review Intelligence with NLP
+# Fake Review Detection and Helpfulness Prediction
 
-This project combines two coursework streams into one portfolio-ready NLP repository:
+This project applies classical NLP and machine learning techniques to two review-analysis tasks:
 
 - fake review classification
 - review helpfulness classification and regression
 
-The cleaned version focuses on reusable preprocessing, reproducible train/test splits, model comparison, and metrics that are easy to explain in interviews.
-
 Data not included in this repository.
 
-## What This Repository Covers
+## Overview
 
-- text cleaning with stopword removal and stemming
+- text preprocessing with stopword removal and stemming
 - TF-IDF feature extraction
 - fake review detection with multiple classifiers
-- helpfulness scoring based on Amazon review votes
+- helpfulness prediction from Amazon review votes
 - binary helpfulness classification
 - continuous helpfulness regression
 
@@ -24,14 +22,12 @@ Data not included in this repository.
 - `data/README.md`: expected dataset files and schema
 - `requirements.txt`: Python dependencies
 
-## Datasets
+## Data
 
 This repository expects:
 
 - a local fake reviews CSV
 - either a local export of the Amazon reviews dataset or internet access for the Hugging Face `amazon_us_reviews` dataset
-
-The original datasets are not committed here.
 
 ## Quick Start
 
@@ -53,8 +49,3 @@ The script writes results under `outputs/`:
 - `fake_review_results.csv`
 - `helpfulness_classification_results.csv`
 - `helpfulness_regression_results.csv`
-
-## Why This Repo Is Worth Showcasing
-
-- It aligns well with a data scientist profile: NLP preprocessing, text representation, supervised learning, and evaluation.
-- It demonstrates how to turn noisy notebook work into a cleaner applied ML project.
